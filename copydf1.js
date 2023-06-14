@@ -4,8 +4,8 @@ let selection=0;let ob=0;let el;let slct;let bod; let vld=0;
 let larg=screen.availWidth;
 let navi=document.querySelector("#nv1");
 let suj=document.querySelector("#tab");
-navi.style.left=""+Math.round((larg-800)/2)+"px";
-
+if(larg>=800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
+if(larg<800){navi.style.right=""+50+"px";}
 
 document.querySelector("#sbmt").addEventListener("click",()=>{
 
